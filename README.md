@@ -5,10 +5,10 @@
 
 ## Screenshots-
 
-![Layout-Sidebar-Hidden](img/layout.png)
+![Layout-Sidebar-Hidden](ss/1.png)
 
-![Layout-Sidebar-Visible](img/layout.png)
+![Layout-Sidebar-Visible](ss/2.png)
 
-![Complete-Sidebar-Hidden](img/layout.png)
+![Complete-Sidebar-Hidden](ss/3.png)
 
-![Complete-Sidebar-Visible](img/layout.png)
+![Complete-Sidebar-Visible](ss/4.png)
