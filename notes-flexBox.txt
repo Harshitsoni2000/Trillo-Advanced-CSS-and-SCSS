@@ -1,0 +1,121 @@
+## FLEX does not apply to items with position:absolute;
+
+## For Containers-
+    ### display: flex;
+    ### flex-direction(MA: Main Axis, CA: Column Axis): row(MA: L->R, CA: T->B) |
+                        column(MA: T->B, CA: L->R) |
+                        row-reverse(MA: R->L, CA: T->B) |
+                        column-reverse(MA: B->T, CA: L->R);
+    ### justify-content(along main-axis): center | flex-start | flex-end | space-between | space-around | space-evenly;
+    ### align-items(along cross axis): center | stretch | flex-start | flex-end;
+    ### flex-wrap: np-wrap(default) | wrap.
+    ### align-content(along the cross-axis): center | flex-end | flex-start | stretch.
+
+## For Items-
+    ### align-self(overwrites align-items for a specific item): center | flex-start | flex-end | stretch;
+    ### flex-grow(1. takes font size into account
+                  2. Instead use flex: 1; when u wanna use just flex-grow):
+                  #### .items {flex: 1}: Will make all items take equal amount of available space,
+                                         Will make them grow equally as the height/width of the container increases.
+    ### flex-basis(Measures width w.r.t. container's width): 20% | 300px; This is used to define an element's width,
+                         instead of the width property.
+                         It takes the %age amt., or the fixed amt of the available space.
+    ### flex-shrink: 0(do not allow items to shrink) |
+                     1(allow items to shrink);
+
+    ### flex: flex-grow flex-shrink flex-basis(width);
+        Eg:- flex: 1 1 auto;
+             flex: 0 0 300px;( THIS CAN BE USED TO POSIITON THE BACKGROUND SVG IN FRONT_WEND MASTERS CARD PROJECTS,
+                               SO THAT THE BACKGROUND SVG STARTS CROPPING AS WE DECREASE THE VIEWPORT WIDTH.)
+
+## :root {
+
+    }
+    ### We use this to declare our root CSS variables.
+    They can be used if we are only using SCSS for its variables.
+    They do not need a CSS pre-compiler.
+    They can be accessed using JavaScript.
+    Eg: :root {
+            --color-primary
+        }
+    Accessing: var(--color-primary);
+
+## Why would you use native CSS custom properties?
+    ##You can use them without the need of a preprocessor.
+    ##They cascade. You can set a variable inside any selector to set or override its current value.
+    ##When their values change (e.g. media query or other state), the browser repaints as needed.
+    ##You can access and manipulate them in JavaScript.
+
+## Flex transition-
+    sidebar: flex: 0; opacity: 0; width: 0; -> flex: 1 0 20%; opacity: 1; // we can also give shrink: 0
+    content-info: flex: 1 1 100%; -> flex: 1 1 80%; // we can also give shrink: 0
+
+## Using svg from sprite file.
+    ### <svg>
+            <use xlink:href = "img/icomoon/sprite.svg#icon-magnifying-glass"></use>
+    ### IT ONLY WORKS ON A SERVER.
+
+## outline: none;
+    ### can be used to remove input highlighting.
+
+## Remove ALL SEARCH STYLING
+    input[type="search"] {
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+            -webkit-appearance: none;
+        }
+    }
+
+## LEARN USE flex: 0; to not grow when not needed.
+
+## For search box-
+    container: flex: 0 1 43rem;
+    search input: flex: 0 1 75%;
+    On focus: flex: 1 1 95%;
+
+## Fill color in svgs from Iconmoon sprite file -
+    fill: color;
+
+## currentColor-
+    fill: currentColor;
+    ### Current color is used to give,
+        the color value of the current element or the parent element.
+    ### Can be used to give the same color to the svg as the anchor elements,
+        when we hover on the anchor element.
+
+## To have transitions in order,
+    Firstly mention the 1st transition name and time,
+    then after a ",", mention the second transition name and time
+    with a delay which equals transition duration of 1st transition.
+
+## To use z-index,
+    U MUST HAVE A POSIITON.
+
+## margin: auto; IS REALLY IMPORTANT.
+    ### Can be used to create space on either side of an element.
+
+## :focus; Item stays in focus.
+    :active; Item is removed from active state after 1 click.
+    So for animations on <a> tag use focus for infinite animations.
+
+## Infinite animations:
+    Eg: animation: animation_name animation_duration animation_iteration_count;
+        animation: grow 1s {3 | 8 | infinite};
+
+## To use flex-wrap, item's display must be made flex first.
+
+## Move the arrow in the button to right animation-
+    ### increase the left width of the arrow.
+
+## Masks(For svgs)- (Just like background clipping)
+    background: red;
+    -webkit-mask-image: url(../img/icomoon/svgs/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+
+## Using quotation marks and content property of before element.
+    ### Copy the ISOnum of the the glyph,
+        and paste it in content.
+        Then just change it any way u like.
+    ### Also set line-height: 1;

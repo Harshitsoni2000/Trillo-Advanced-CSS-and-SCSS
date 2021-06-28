@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="shortcut icon" type="image/webp" href="img/webp/favicon.webp">
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <span class="ui-top-l"></span>
+            <span class="ui-top-r"></span>
+            <span class="ui-bottom-l"></span>
+            <span class="ui-bottom-r"></span>
+            <input id="checkbox" class="checkbox" type="checkbox">
+            <label class="label" for="checkbox">
+                <i class="fas fa-chevron-left fa-2x label__icon"></i>
+            </label>
+            <header class="container__header">
+                <img src="img/webp/logo.webp" alt="Trillo Logo" class="logo">
+                <form action="#" class="search">
+                    <input class="search__input" type="search" placeholder="Search Hotels" required>
+                    <a href="#" class="search__button" type="button">
+                        <svg class="search__svg">
+                            <use xlink:href="img/icomoon/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </a>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/icomoon/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">9</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/icomoon/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">16</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/webp/me.webp" alt="User Photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Harsh</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="container__content">
+                <nav class="sidebar">
+                    <ul class="sidebar__list">
+                        <li class="list__items">
+                            <a class="list__items__links" href="#" active>
+                                <svg class="sidebar__svg">
+                                    <use xlink:href="img/icomoon/sprite.svg#icon-home"></use>
+                                </svg>
+                                Hotel
+                            </a>
+                        </li>
+                        <li class="list__items">
+                            <a class="list__items__links" href="#">
+                                <svg class="sidebar__svg">
+                                    <use xlink:href="img/icomoon/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                Flight
+                            </a>
+                        </li>
+                        <li class="list__items">
+                            <a class="list__items__links" href="#">
+                                <svg class="sidebar__svg">
+                                    <use xlink:href="img/icomoon/sprite.svg#icon-key"></use>
+                                </svg>
+                                Rentals
+                            </a>
+                        </li>
+                        <li class="list__items">
+                            <a class="list__items__links" href="#">
+                                <svg class="sidebar__svg">
+                                    <use xlink:href="img/icomoon/sprite.svg#icon-map"></use>
+                                </svg>
+                                Tours
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="legal">
+                        Designed and modified with ❤ By Harshit, based on the design by Mr. Jonas.
+                    </div>
+                </nav>
+                <main class="hotel-view">
+                    <div class="gallery">
+                        <figure class="gallery__photo">
+                            <img src="img/webp/hotel-1.webp" alt="A Lake at the rear" class="photo">
+                            <figcaption class="photo-caption">Lake</figcaption>
+                        </figure>
+                        <figure class="gallery__photo">
+                            <img src="img/webp/hotel-2.webp" alt="A large Swimming pool" class="photo">
+                            <figcaption class="photo-caption">Pool</figcaption>
+                        </figure>
+                        <figure class="gallery__photo">
+                            <img src="img/webp/hotel-3.webp" alt="The Roof" class="photo">
+                            <figcaption class="photo-caption">Roof</figcaption>
+                        </figure>
+                    </div>
+                    <div class="hotel">
+                        <div class="hotel__name">
+                            Hotel Las Palmas
+                            <div class="name__svg">
+                                <svg class="star__svg">
+                                    <use xlink:href="../img/icomoon/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="star__svg">
+                                    <use xlink:href="../img/icomoon/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="star__svg">
+                                    <use xlink:href="../img/icomoon/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="star__svg">
+                                    <use xlink:href="../img/icomoon/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="star__svg">
+                                    <use xlink:href="../img/icomoon/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="hotel__info">
+                            <div class="hotel__loc">
+                                <svg class="loc__svg">
+                                    <use xlink:href="../img/icomoon/sprite.svg#icon-location-pin"></use>
+                                </svg>
+                                <a href="#">Boston, NewYork</a>
+                            </div>
+                            <div class="hotel__rating">
+                                <span class="rating">8.6</span>
+                                <span class="votes">429 Votes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotel__details">
+                        <div class="hotel__description">
+                            <div class="para">
+                                <p class="para-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.</p>
+                                <p class="para-2">Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.</p>
+                            </div>
+                            <div class="facilities">
+                                <div class="facilities__block1">
+                                    <span class="facility">
+                                        <svg class="facility__svg">
+                                            <use xlink:href="../img/icomoon/sprite.svg#icon-chevron-thin-right"></use>
+                                        </svg>
+                                        <p class="facilty__name">Close to the beach</p>
+                                    </span>
+                                    <span class="facility">
+                                        <svg class="facility__svg">
+                                            <use xlink:href="../img/icomoon/sprite.svg#icon-chevron-thin-right"></use>
+                                        </svg>
+                                        <p class="facilty__name">Free airport shuttle</p>
+                                    </span>
+                                    <span class="facility">
+                                        <svg class="facility__svg">
+                                            <use xlink:href="../img/icomoon/sprite.svg#icon-chevron-thin-right"></use>
+                                        </svg>
+                                        <p class="facilty__name">Air conditioning and heating</p>
+                                    </span>
+                                    <span class="facility">
+                                        <svg class="facility__svg">
+                                            <use xlink:href="../img/icomoon/sprite.svg#icon-chevron-thin-right"></use>
+                                        </svg>
+                                        <p class="facilty__name">We speak all languages</p>
+                                    </span>
+                                </div>
+                                <div class="facilities__block2">
+                                    <span class="facility">
+                                        <svg class="facility__svg">
+                                            <use xlink:href="../img/icomoon/sprite.svg#icon-chevron-thin-right"></use>
+                                        </svg>
+                                        <p class="facilty__name">Breakfast included</p>
+                                    </span>
+                                    <span class="facility">
+                                        <svg class="facility__svg">
+                                            <use xlink:href="../img/icomoon/sprite.svg#icon-chevron-thin-right"></use>
+                                        </svg>
+                                        <p class="facilty__name">Free wifi in all rooms</p>
+                                    </span>
+                                    <span class="facility">
+                                        <svg class="facility__svg">
+                                            <use xlink:href="../img/icomoon/sprite.svg#icon-chevron-thin-right"></use>
+                                        </svg>
+                                        <p class="facilty__name">Pets allowed</p>
+                                    </span>
+                                    <span class="facility">
+                                        <svg class="facility__svg">
+                                            <use xlink:href="../img/icomoon/sprite.svg#icon-chevron-thin-right"></use>
+                                        </svg>
+                                        <p class="facilty__name">Perfect for families</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="recommended-by">
+                                <p class="recommended-by__para">Lucy and 3 other friends recommend this hotel.</p>
+                                <div class="recommended-by__users">
+                                    <img src="img/webp/user-6.webp" alt="User-6" class="user-photo user-6">
+                                    <img src="img/webp/user-3.webp" alt="User-3" class="user-photo user-3">
+                                    <img src="img/webp/user-4.webp" alt="User-4" class="user-photo user-4">
+                                    <img src="img/webp/user-5.webp" alt="User-5" class="user-photo user-5">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__reviews">
+                            <div class="review__nick">
+                                <div class="review__para">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                                </div>
+                                <div class="user__info">
+                                    <div class="user">
+                                        <img src="img/webp/user-1.webp" alt="user-1" class="user__photo">
+                                        <div class="name_dob">
+                                            <p class="user__name">Nick<span class="user__name-lname">Smith</span></p>
+                                            <p class="user__dob">Feb 23rd,<span class="user__dob-year">2021</spam>
+                                        </div>
+                                        </p>
+                                    </div>
+                                    <span class="user__rating">8.7</span>
+                                </div>
+                            </div>
+                            <div class="review__mary">
+                                <div class="review__para">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                                </div>
+                                <div class="user__info">
+                                    <div class="user">
+                                        <img src="img/webp/user-2.webp" alt="user-2" class="user__photo">
+                                        <div class="name_dob">
+                                            <p class="user__name">Mary<span class="user__name-lname">Thomas</span></p>
+                                            <p class="user__dob">Sept 13th,<span class="user__dob-year">2021</span></p>
+                                        </div>
+                                    </div>
+                                    <span class="user__rating">9.3</span>
+                                </div>
+                            </div>
+                            <a class="review__link" href="#">
+                                <button class="btn">
+                                    Show all
+                                    <span class="btn__arrow">&rarr;</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cta">
+                        <p class="cta__para">Good news! We have 4 free rooms for your selected dates!</p>
+                        <button class="cta__btn">
+                            <span class="btn__visible">Book now</span>
+                            <span class="btn__hidden">Only 4 rooms left!</span>
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+.label {
+    position: absolute;
+    top: 8.2rem;
+    @include responsive(phone) {
+        top: 12rem;
+    }
+    left: 1rem;
+    height: 4rem;
+    width: 4rem;
+    z-index: 195;
+    background: linear-gradient(to right, #FF3366, #eb2f64);
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.3rem 2rem rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: all 0.25s;
+
+    &__icon {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0);
+        @include responsive(tab-port) {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+        transition: all 0.25s;
+    }
+}
+
+.checkbox {
+    display: none;
+
+    &:checked {
+        & + .label {
+            @include responsive(tab-port) {
+                top: 14rem;
+            }
+            @include responsive(phone) {
+                top: 16rem;
+            }
+            @media (max-width: 18.75em) {
+                top: 22rem;
+            }
+
+            .label__icon {
+                transform: translate(-50%, -50%) rotate(180deg);
+                @include responsive(tab-port) {
+                    transform: translate(-50%, -50%) rotate(270deg);
+                }
+            }
+        }
+
+        & ~ .container__content {
+            .hotel-view {
+                flex: 1 1 80%;
+
+                .cta {
+                    margin: 0 3rem 3rem;
+                }
+            }
+
+            .sidebar {
+                flex: 1 0 20%;
+                opacity: 1;
+
+                &__list {
+                    flex-wrap: nowrap;
+                    @media (max-width: 500px) {
+                        flex-wrap: wrap;
+                    }
+
+                    .list__items {
+                        flex-wrap: nowrap;
+                        @media (max-width: 500px) {
+                            flex: 1;
+                        }
+
+                        &__links:link,
+                        &__links:visited {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .legal {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
