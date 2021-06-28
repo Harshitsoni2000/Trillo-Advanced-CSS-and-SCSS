@@ -5,7 +5,7 @@
 
 ## Screenshots-
 
-![Layout-Sidebar-Hidden](img/layout.png)
+[Layout-Sidebar-Hidden](img/layout.png)
 
 ![Layout-Sidebar-Visible](img/layout.png)
 
