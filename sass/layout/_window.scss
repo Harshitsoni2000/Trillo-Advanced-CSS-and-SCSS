@@ -6,7 +6,7 @@
     flex: 1;
     position: relative;
     margin: 3rem;
-    @media (max-width: 27.5em) {
+    @media only screen and (max-width: 27.5em) {
         margin: 0;
         overflow: hidden;
     }
@@ -23,14 +23,14 @@
             flex-wrap: wrap;
             padding: 1rem 0;
         }
-        @media (max-width: 16.3125em) {
+        @media only screen and (max-width: 16.3125em) {
             justify-content: center;
         }
 
         .logo {
             height: 3.5rem;
             padding: 0 2rem;
-            @media (max-width: 16.3125em) {
+            @media only screen and (max-width: 16.3125em) {
                 margin-bottom: 2rem;
             }
         }

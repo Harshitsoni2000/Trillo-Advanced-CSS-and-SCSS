@@ -38,7 +38,7 @@
             @include responsive(phone) {
                 top: 16rem;
             }
-            @media (max-width: 18.75em) {
+            @media only screen and (max-width: 18.75em) {
                 top: 22rem;
             }
 
@@ -65,13 +65,13 @@
 
                 &__list {
                     flex-wrap: nowrap;
-                    @media (max-width: 500px) {
+                    @media only screen and (max-width: 500px) {
                         flex-wrap: wrap;
                     }
 
                     .list__items {
                         flex-wrap: nowrap;
-                        @media (max-width: 500px) {
+                        @media only screen and (max-width: 500px) {
                             flex: 1;
                         }
 
